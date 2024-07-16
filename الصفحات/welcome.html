@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- لفتح نافذه جديدة بعد 4ثواني -->
+     <meta http-equiv="refresh" content="4.3;url=../home.html"> 
+    <title>welcome</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Lemonada", cursive;
+        }
+        .contant{
+            width: 100%;
+            height: 100vh;
+            /* background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../carsphoto/cars\ bg\ 5.jpg); */
+            background-color: #31b2d6cc;
+            background-position: center;
+            background-size: cover;
+        }
+        @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	/* font-family: "Russo One", sans-serif; */
+	width: 100%; height: 100%;
+    margin-top: 5%;
+}
+svg text {
+	animation: stroke 3s infinite alternate;
+	stroke-width: 2;
+	stroke: #ff1011;
+	font-size: 61px;
+}
+
+@keyframes stroke {
+	0%   {
+		fill: rgba(255,16,17,0); stroke: rgba(255,16,17,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(255,16,17,0); stroke: rgba(255,16,17,1); }
+	80%  {fill: rgba(255,16,17,0); stroke: rgba(255,16,17,1); stroke-width: 3; }
+	100% {
+		fill:#464587; stroke: rgba(255,16,17,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+    }
+}
+
+.wrapper {background-color: transparent};
+
+
+    </style>
+</head>
+<body>
+    <div class="contant">
+    <div class="wrapper">
+        <svg> 
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                WELCOME
+            </text>
+        </svg>
+        <svg> 
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                You have been logged in successfully
+            </text>
+        </svg>
+    </div>
+</div>
+</body>
+</html>

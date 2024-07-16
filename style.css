@@ -1,0 +1,657 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lemonada", cursive;
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #464587b9;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #464587;
+}
+.active {
+  color: #ff1011;
+  background-color: #22b9e4;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./carsphoto/car\ bg\ 1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  animation: back infinite 16s;
+}
+@keyframes back {
+  0%,
+  100% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(./carsphoto/car\ bg\ 1.jpg);
+  }
+  30% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(./carsphoto/cars\ bg\ 4.jpg);
+  }
+  60% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(./carsphoto/car\ bg\ 3.jpg);
+  }
+  90% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(./carsphoto/cars\ bg\ 5.jpg);
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  background-color: #464587;
+}
+ul li {
+  display: inline-block;
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 8px 35px;
+  color: #fff;
+  /* #464587 لون */
+  transition: 0.3s ease;
+}
+ul li a:hover {
+  color: #ff1011;
+  background-color: #22b9e4;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+nav h1 {
+  font-size: 30px;
+  color: #fff;
+  margin-right: 10px;
+}
+nav h1 span {
+  color: #22b9e4;
+}
+nav h1 i {
+  font-size: 2.2rem;
+  color: #ff1011;
+}
+nav h1 i:hover {
+  transform: translateX(20px);
+  transition: 0.3s ease;
+}
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+  font-family: "Russo One", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+svg text {
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #365fa0;
+  font-size: 97px;
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+  }
+  80% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-width: 3;
+  }
+  100% {
+    fill: #ff1011;
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+
+.wrapper {
+  background-color: transparent;
+}
+
+section {
+  background-color: #b3b3b3;
+  width: 100%;
+}
+section h1 {
+  text-align: center;
+  color: #464587;
+}
+.loader {
+  display: inline-block;
+  text-align: center;
+  line-height: 86px;
+  text-align: center;
+  position: relative;
+  padding: 0 48px;
+  font-size: 55px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: currentColor;
+  position: absolute;
+  animation: load 0.7s infinite alternate ease-in-out;
+  top: 0;
+}
+.loader:after {
+  top: auto;
+  bottom: 0;
+}
+@keyframes load {
+  0% {
+    left: 0;
+    height: 43px;
+    width: 15px;
+    transform: translateX(0);
+  }
+  50% {
+    height: 10px;
+    width: 40px;
+  }
+  100% {
+    left: 100%;
+    height: 43px;
+    width: 15px;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animloader {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+section .cars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .cars .card {
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px #464587;
+}
+section .cars .card img {
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+}
+section .cars .card img:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease;
+}
+section .cars .card .btnimg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+section .cars .card .btnimg button {
+  width: 110px;
+  height: 60px;
+  padding: 8px;
+  border-radius: 12px;
+  font-size: 40px;
+  background: #464587;
+}
+section .cars .card .btnimg button:hover {
+  background-color: #ff1011;
+  color: #fff;
+  cursor: pointer;
+}
+section .cars .card .btnimg button i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+section .cars{
+   margin-top: 22px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    margin-right: 35px;
+} */
+#btn-up {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  position: fixed;
+  background-color: #ff1011;
+  bottom: 10px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+  transition: 0.3s ease all;
+  font-size: 25;
+  color: #fff;
+  font-weight: 900;
+}
+.load {
+  width: 15px;
+  height: 20px;
+  background: #fff;
+  margin-left: 15px;
+  margin-top: 15px;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: bump 0.4s linear infinite alternate;
+}
+.load::after {
+  content: "";
+  box-sizing: border-box;
+  left: 50%;
+  bottom: 100%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  border: 15px solid transparent;
+  border-bottom-color: #fff;
+}
+
+@keyframes bump {
+  0% {
+    transform: translate(-50%, 5px);
+  }
+  100% {
+    transform: translate(-50%, -5px);
+  }
+}
+.shopcars {
+  background-color: #080808c7;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  transition: 0.5s;
+}
+.container h1 {
+  text-align: center;
+  color: #22b9e4;
+  font-size: 30px;
+  font-weight: 700;
+}
+.cart {
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  right: 100%;
+  width: 400px;
+  background-color: #22bae4c7;
+  height: 99vh;
+  border-radius: 15px;
+  transition: 0.4s;
+  box-shadow: 0 10px 20px #464587;
+  text-align: center;
+}
+.active .cart {
+  right: calc(100% - 400px);
+}
+.cart h1 {
+  direction: ltr;
+  color: #ff1011;
+  margin-top: 22px;
+  padding: 0px 25px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.total2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  border-top: 1px solid black;
+  padding-right: 20px;
+  padding-top: 15px;
+  direction: ltr;
+}
+.total-title {
+  font-size: 28px;
+  font-weight: 900;
+  margin-right: 20px;
+  margin-top: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.total {
+  color: rgb(91, 230, 11);
+  font-size: 22px;
+  margin-top: 30px;
+  font-weight: 800;
+}
+.total::after {
+  content: "$";
+}
+.btn-cart {
+  background: #00ff0a;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 15px;
+  border: none;
+  margin-top: 50px;
+  transition: 1.1s ease;
+  color: black;
+}
+.btn-cart:hover {
+  transform: scale(1.1);
+  background: #ff1011;
+  color: #fff;
+  cursor: pointer;
+}
+.closeShopping {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 10px;
+}
+.closeShopping:hover {
+  cursor: pointer;
+  color: red;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.list .item {
+  text-align: center;
+  background-color: #b4b2b2be;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px 50px;
+  box-shadow: 0px 9px 20px #4d409bce;
+}
+.list .item img {
+  width: 80%;
+  margin-top: 6px;
+  height: 230px;
+  margin-right: 20px;
+  transition: 0.5s ease-in;
+}
+.list .item img:hover {
+  transform: scale(1.1);
+}
+.list .item .title {
+  color: #000;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 800;
+  /* transition: 0.1s ease; */
+}
+.list .item .color {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+.list .item .price {
+  /* margin: 10px; */
+  direction: ltr;
+  color: #010c0e;
+  font-size: 20px;
+  font-weight: 600;
+}
+.list .item .price::after {
+  content: " $";
+  font-size: 22px;
+  color: #00ff08;
+  font-weight: bold;
+  text-shadow: 0 5px 10px black;
+}
+.list .item button {
+  font-size: 20px;
+  padding: 6px;
+  background-color: #464587;
+  color: rgb(250, 248, 248);
+  margin-bottom: 10px;
+  border-radius: 13px;
+}
+.list .item button:hover {
+  cursor: pointer;
+  transition: 0.3s ease;
+  background-color: #ff1011;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  transform: scale(1.1);
+}
+.listCard div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: #fff;
+  gap: 10px;
+}
+.listCard div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+.listCard div  img {
+  width: 150px;
+  height: 100px;
+}
+.listCard div button {
+  background-color: #ff1011;
+  border: none;
+  font-size: 15px;
+  padding: 0 10px;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+}
+.listCard .count {
+  margin: 0 10px;
+}
+.payment {
+  width: 800px;
+  height: 700px;
+  background-color: #464587d8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 14px 50px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+  display: none;
+}
+.payTitle {
+  font-size: 35px;
+  color: #ff1011;
+}
+label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #22b9e4;
+}
+.payInput {
+  width: 600px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 3px solid #22b9e4;
+}
+.payInput::placeholder {
+  color: #ff1011;
+}
+.payButton {
+  position: absolute;
+  height: 50px;
+  bottom: -50px;
+  width: 100%;
+  left: 0;
+  background-color: #22b9e4;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.payButton:hover {
+  background-color: #ff1011;
+  font-size: 25px;
+}
+.cardIcans {
+  display: flex;
+  padding: 10px;
+  margin-left: 110px;
+  width: 20%;
+  height: 20%;
+}
+.cardIcan {
+  margin-left: 20px;
+}
+.cardInfo {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #ff1011;
+  color: #fff;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  cursor: pointer;
+}
+.payInput-sm {
+  width: 220px;
+  padding: 10px;
+  direction: ltr;
+  margin-bottom: 30px;
+}
+.payInput-sm::placeholder {
+  color: #ff1011;
+}
+@media (min-width: 700px) and (max-width: 1100px) {
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  section .cars {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-right: 35px;
+  }
+}
+@media (min-width: 1px) and (max-width: 700px) {
+  .list {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    gap: 30px;
+  }
+  section .cars {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+    margin-right: 35px;
+  }
+}
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #464343;
+  z-index: 99;
+}
+footer h4 {
+  margin-right: 30px;
+}
+footer div ul {
+  display: flex;
+  flex-direction: column;
+}
+footer div ul li a {
+  font-size: 12px;
+}
+footer div ul li a:hover {
+  font-size: 14px;
+}
+footer div #icon {
+  display: flex;
+  flex-direction: row;
+}
+footer div #icon li i {
+  font-size: 2rem;
+}
+footer .dl {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .dl a {
+  width: auto;
+  border-radius: 10px;
+  height: 50px;
+  padding: 10px;
+  background-color: #000;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+footer .dl a i {
+  font-size: 2rem;
+}
+.end {
+  background-color: #464587;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./login.css" />
+
+    <title>login</title>
+  </head>
+  <body>
+    <nav>
+      <h1><span> عربيت </span><i class="fa-solid fa-car"></i> تك</h1>
+      <ul>
+        <li><a href="../home.html">الرئسيه</a></li>
+        <li><a href="./contact.html">تواصل معنا</a></li>
+        <li><a href="./cart.html">معرضنا</a></li>
+        <li><a href="./signup.html" class="active">انشاء حساب</a></li>
+        <li><a href="./login.html">تسجيل دخول</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="form-box">
+        <h1 id="title">Signup</h1>
+        <form
+          class="login-form"
+          method="post"
+          name="myform"
+          onsubmit="return validated()"
+        >
+          <div class="name">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="name" placeholder="UserName" />
+          </div>
+          <div id="name-err">please Enter your Username</div>
+          
+          <div class="pass">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="password" placeholder="Password" />
+          </div>
+          <div id="pass-err">please Enter your password</div>
+          <br />
+          <div class="email" id="emailfiled">
+            <i class="fa-solid fa-envelope"></i>
+            <input
+              autocomplete="off"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+          </div>
+          <div id="user-err">please Enter your Email</div>
+          <br>
+
+          <div class="phone">
+            <i class="fa-solid fa-phone"></i>
+            <input type="text" name="phone" placeholder="mobile phone" />
+          </div>
+          <div id="phone-err">please Enter your phone number</div>
+          <br />
+          <button id="login" type="submit">signup</button>
+          <div class="footer">
+            <p>To login? click <a href="./login.html"> login</a></p>
+          </div>
+          <h1 id="Create"> Create Account With</h1>
+          <div class="icans">
+          <a href="https://ar-ar.facebook.com/">  <i class="fa-brands fa-facebook" style="color: #00c8ff;"></i></a>
+           <a href="https://www.google.com.eg/?hl=ar"> <i class="fa-brands fa-google" style="color: #00c8ff;"></i></a>
+            <a href="https://twitter.com/?lang=ar"><i class="fa-brands fa-twitter" style="color: #00c8ff;"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #00c8ff;"></i></a>
+             
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./login.js"></script>
+  </body>
+</html>

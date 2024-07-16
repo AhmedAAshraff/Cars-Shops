@@ -1,0 +1,176 @@
+*{
+    font-family: 'Lemonada', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #464587b9;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #464587;
+}
+.container{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../carsphoto/car\ bg\ 2.jpg) ;
+    background-position: center;
+    width: 100%;
+    height: 110vh;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.active{
+    color: #ff1011;
+    background-color: #22b9e4;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    direction: rtl;
+    background-color: #464587;
+  }
+  ul li {
+    display: inline-block;
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 5px 35px;
+    color: #fff;
+    /* #464587 لون */
+    transition: 0.3s ease;
+  }
+  ul li a:hover {
+    color: #ff1011;
+    background-color: #22b9e4;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  nav h1 {
+    font-size: 25px;
+    color: #fff;
+    margin-right: 10px;
+  }
+  nav h1 span {
+    color: #22b9e4;
+  }
+  nav h1 i {
+    font-size: 2.2rem;
+    color: #ff1011;
+  }
+  nav  h1 i:hover {
+    transform: translateX(20px);
+    transition: 0.3s ease;
+  }
+  
+.form-box{
+    position: relative;
+    margin-top: 50px;
+    width: 480px;
+    box-shadow: 0px 5px 15px #00c8ff;
+    height: auto;
+    background: #05050542;
+    border-radius: 5px 50px;
+  text-align: center;
+}
+#title{
+    padding: 30px 165px ;
+    font-size: 40px;
+    color:#00c8ff;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+div  i{
+    font-size: 1.3rem;
+    color:#ffffffc5;
+}
+.pass{
+    margin-top: 30px;
+}
+input{
+    width: 70%;
+    background: transparent;
+    outline: none;
+    color: #ffffff86;
+    font-size: 16px;
+    border: none;
+    padding: 2px 12px;
+    border-bottom: 3px solid #22b9e4 ;
+}
+input::placeholder{
+    font-size: 16px;
+    color: #22b9e4;
+}
+#user-err,
+#pass-err,
+#name-err,
+#phone-err{
+    font-size: 18px ;
+    margin: 6px 10px;
+    padding: 6px;
+    color:#ff0000;
+    text-shadow: 0px 15px 30px black;
+    background:  rgba(255, 0, 0, 0.1);
+    width: 330px;
+    text-align: center;
+    margin-left: 65px;
+    border-radius: 10px;
+    display: none;
+}
+.forget a{
+    color: #ffffffb7;
+    font-weight: 200;
+}
+button{
+    width:60%;
+    margin-top: 4px;
+    padding: 3px 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: #22b9e4;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:hover{
+    color: #00c8ff;
+    background: transparent;
+    font-weight: bold;
+    
+    font-size: 22px;
+}
+.footer{
+    margin-top: 15px;
+    color: #ffffffb0;
+}
+.footer a{
+    color: #00c8ff;
+}
+#Create{
+  font-size: 35px;
+  color: #ff1010dc;
+}
+.icans i{
+ 
+  font-size: 1.6rem;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 20px;
+}
+.icans i:hover{
+  background-color: #ff1010c0;
+  transform: scale(1.2);
+}

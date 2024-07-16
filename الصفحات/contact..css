@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lemonada", cursive;
+    direction: rtl;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #464587b9;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #464587;
+}
+.contant{
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../carsphoto/car\ bg\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #464587;
+}
+.active{
+  color: #ff1011;
+  background-color: #22b9e4;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+ul li {
+  display: inline-block;
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 8px 35px;
+  color: #fff;
+  /* #464587 لون */
+  transition: 0.3s ease;
+}
+ul li a:hover {
+  color: #ff1011;
+  background-color: #22b9e4;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+nav h1 {
+  font-size: 30px;
+  color: #fff;
+  margin-right: 10px;
+}
+nav h1 span {
+  color: #22b9e4;
+}
+nav h1 i {
+  font-size: 2.2rem;
+  color: #ff1011;
+}form{
+    margin-top:5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.con  h1{
+    color:  #ff1011;
+    /* font-size: 25px; */
+    margin-top: 25px;
+
+}
+ textarea{
+    width: 600px;
+    height: 250px;
+    border: none;
+    border-radius: 20px;
+    background-color:#22b9e4;
+    color: #080808; 
+}
+textarea::placeholder{
+    font-size: 18px;
+    color: #ff1011;
+    text-align: center;
+    padding-top:100px;
+}
+button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #464587 ;
+    color: #ff1011;
+    font-size: 18px;
+    font-weight: 600;
+}
+button:hover{
+    background-color:#ff1011;
+    color: #22b9e4;
+    transform: scale(1.1);
+    font-weight: 900;
+    transition: 0.3s ease ;
+    cursor: pointer;
+}
+#Contact{
+  background-color: #464587;
+}
+
+.title{
+  font-size: 45px;
+  margin-left: 20px;
+  color: #ff1011;
+}
+.title  p{
+  font-size: 22px;
+  padding: 15px;
+}
+.icon{
+  margin-top: 40px;
+}
+.icon ul li a i{
+  font-size: 1.5rem;
+}
+.icon ul li a i:hover{
+  background-color: #22b9e4;
+}
+#Contact .contanier6 .row{
+  display: flex;
+  direction: ltr;
+  justify-content: space-between;
+}
+
+
+
+.contanier6 .row .right-coulm{
+  padding-right: 90px;
+  padding-top: 10px;
+}
+
+.contanier6 .row .right-coulm input,textarea{
+  display: block;
+  width: 500px;
+  margin: 15px 0;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #f0f0f0c7;
+}
+input::placeholder{
+  font-size: 18px;
+  color: #ff1011;
+  text-align: center;
+}
+.btn3{
+  margin-top: 15px;
+  width: 160px;
+  height: 50px;
+  font-weight: 700;
+  border-radius: 7px;
+  cursor: pointer;
+  border: none;
+
+ color: #0ef;
+ background: transparent;
+ border: 2px solid #0ef;
+ 
+}
+
+.btn3:hover{
+ transition: 0.3s ease-out;
+ background: #22b9e4;
+ color: #081b29;
+ box-shadow: 0 0 20px #0ef;
+}
+

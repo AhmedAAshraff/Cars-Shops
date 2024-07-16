@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="refresh" content="5; url=./wel.html">  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css">
+    <title>cars shopping</title>
+  </head>
+  <body>
+    <div class="contant">
+      <header id="header">
+        <nav>
+          <h1><span> عربيت </span><i class="fa-solid fa-car"></i> تك</h1>
+          <ul>
+            <li><a href="#header" class="active">الرئسيه</a></li>
+            <li><a href="#sec">احدث السيارات</a></li>
+            <li><a href="./الصفحات/contact.html">تواصل معنا</a></li>
+            <li><a href="#cars">معرضنا</a></li>
+            <li><a href="./الصفحات/login.html">تسجيل دخول</a></li>
+          </ul>
+
+          <h1 class="shopping"><i class="fa-solid fa-cart-shopping"></i></h1>
+        </nav>
+        <br /><br /><br />
+        <br /><br /><br />
+        <div class="wrapper">
+          <svg>
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">Welcome</text>
+          </svg>
+        </div>
+        <br />
+      </header>
+      <section id="sec">
+        <h1><span class="loader">احدث السيارات</span></h1>
+        <div class="cars">
+          <div class="card">
+            <img id="changeimg" src="./carsphoto/1.jpg" alt="" /> <br />
+            <div class="btnimg">
+              <button onclick="next()">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <button onclick="back()">
+                <i class="fa-sharp fa-solid fa-arrow-left"></i>
+              </button>
+            </div>
+            <br />
+          </div>
+        </div>
+        <br />
+      </section>
+      <div class="shopcars" id="cars">
+        <div class="container">
+          <h1><span class="loader">معرضنا</span></h1>
+          <div class="list"></div>
+        </div>
+        <div class="cart">
+          <div class="closeShopping">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+          <h1>your cart</h1>
+          <div class="listCard">
+            
+          </div>
+
+          <div class="total2">
+            <div class="total-title">total</div>
+            <div class="total">0</div>
+          </div>
+          <div>
+            <button class="productButton btn-cart">
+              BUY NOW
+              <span style="font-size: 20px; padding: 0 5px"
+                ><i class="fa-brands fa-cc-visa" style="padding: 6px"></i
+                ><i class="fa-brands fa-cc-mastercard"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+        <br />
+      </div>
+      <div class="payment">
+        <h1 class="payTitle">معلومات المشتري</h1>
+        <label for="">Name</label>
+        <input type="text" placeholder="اكتب الاسم رباعي" class="payInput" />
+        <label for="">Phone number</label>
+        <input type="text" placeholder="+02***********" class="payInput" />
+        <label for="">Address</label>
+        <input
+          type="text"
+          placeholder=" المحافظه /المدينه /البلد /الشارع"
+          class="payInput"
+        />
+        <h1 class="payTitle">معلومات البطقه البنكيه</h1>
+        <div class="cardIcans">
+          <img
+            src="./carsphoto/Old_Visa_Logo.svg.png"
+            width="70px"
+            alt=""
+            class="cardIcan"
+          />
+          <img
+            src="./carsphoto/png-clipart-paypal-friends-without-a-border-logo-business-paypal-blue-image-file-formats.png"
+            width="70px"
+            alt=""
+            class="cardIcan"
+          />
+          <img
+            src="./carsphoto/MasterCard_Logo.svg.png"
+            width="70px"
+            alt=""
+            class="cardIcan"
+          />
+        </div>
+        <input
+          type="password"
+          class="payInput"
+          maxlength="6"
+          placeholder="card Number"
+        />
+        <div class="cardInfo">
+          <input type="text" placeholder="mm" class="payInput-sm" />
+          <input type="text" placeholder="yyyy" class="payInput-sm" />
+          <input type="text" placeholder="cvv" class="payInput-sm" />
+        </div>
+        <button class="payButton">send</button>
+        <span class="close">x</span>
+      </div>
+    </div>
+    <button id="btn-up"><span class="load"></span></button>
+    <footer>
+      <div>
+        <h4>روابط سريعه</h4>
+        <ul>
+          <li><a href="###">سيارات للبيع فوري</a></li>
+          <li><a href="###">كاتلوج احدث السيارات</a></li>
+          <li><a href="###">تجار ومعارض</a></li>
+          <li><a href="###">اخبار</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>خدمات</h4>
+        <ul>
+          <li><a href="##">حجز وصيانه</a></li>
+          <li><a href="###">تقسيط</a></li>
+          <li><a href="###">تامين</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>تابعنا</h4>
+        <ul id="icon">
+          <li>
+            <a href="https://twitter.com/?lang=ar"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://ar-ar.facebook.com/">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+        <p>حمل التطبيق مجانا</p>
+        <div class="dl">
+          <a href="https://play.google.com/store/games?pli=1"
+            >Googleplay
+            <i class="fa-brands fa-google-play" style="color: aquamarine"></i
+          ></a>
+          <a href="https://www.apple.com/eg-ar/app-store/"
+            >APPstore <i class="fa-brands fa-apple"></i
+          ></a>
+        </div>
+      </div>
+
+      <br /><br />
+    </footer>
+    <div class="end">
+      <p><i class="fa-solid fa-house"></i> عربيتك</p>
+      <p>Cairo Ismailia <i class="fa-solid fa-location-dot"></i></p>
+      <p>Ahmed Ashraf <i class="fa-solid fa-user-secret"></i></p>
+      <div>
+        <ul id="icon">
+          <li>
+            <a href="https://twitter.com/?lang=ar"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://ar-ar.facebook.com/">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
